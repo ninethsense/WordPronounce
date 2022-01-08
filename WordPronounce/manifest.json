@@ -1,0 +1,12 @@
+{
+    "name": "Word Pronounce",
+    "description": "This extension lets you select a word in browser by double clicking and listen to its pronounciation. How to use: For British pronunciatoin => Ctrl+DoubleClick to select a word. You will hear pronunciation, or a beep if pronuncation is unavailable. US Pronunciation => Ctrl+Shift+DoubleClick",
+    "version": "1.0",
+    "manifest_version": 3,
+    "author":"Praveen Nair (nick: NinethSense)",
+    
+    "content_scripts":[{
+        "matches":["http://*/*","https://*/*"],
+        "js":["content.js"]
+    }]
+  }
